@@ -38,6 +38,11 @@ li {
     list-style: none;
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
+
 .menu {
     z-index: 100;
 }
@@ -126,4 +131,12 @@ li {
 .menu .menu-chkbx:checked~.menu-chkbx-label .menu-btn .line {
     transform : skew(10deg, 120deg);
     transition: all .5s;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    margin: 1rem auto 0;
+    border-top: 1px solid var(--clr-footer-border);
 }

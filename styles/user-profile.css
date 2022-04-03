@@ -1,0 +1,34 @@
+section.main {
+    text-align: center;
+}
+
+
+section.main>* {
+    margin: 1rem;
+}
+
+.main .main-sad-img {
+    width :clamp(15rem,30vw,25rem);
+    margin: 1rem auto;
+}
+.main .suggestion-cards {
+    display              : grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1rem));
+    justify-content      : center;
+}
+
+.card {
+    border       : 1px solid var(--bg-clr-user-profile-suggestion-cards-border);
+    border-radius: 3px;
+}
+
+.main .suggestion-text {
+    background-color: var(--bg-clr-user-profile-suggestion-txt);
+    padding: 1rem;
+    margin: 0 auto;
+    width: 80vw;
+    font-size: clamp(1rem ,3vw, 3rem);
+    border-radius: 5px;
+}
+
+@media screen and (min-width:1024px) {}
