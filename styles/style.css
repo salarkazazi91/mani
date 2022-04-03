@@ -5,22 +5,27 @@
     margin    : 0;
     padding   : 0%;
     box-sizing: border-box;
-    overflow: scroll;
+    overflow  : scroll;
     overflow-x: hidden;
 
-} 
-::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
 }
+
+::-webkit-scrollbar {
+    width      : 0;
+    /* Remove scrollbar space */
+    background : transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
+
 body {
     color           : var(--clr-primary-font);
     background-color: var(--clr-primary-main);
-    font-family     : 'Source Code Pro', monospace;
+    font-family     : IndieFlower-Regular, 'Source Code Pro', monospace;
     font-size       : clamp(1rem, 2vw, 3rem);
 }
 
@@ -115,4 +120,3 @@ li {
     transform : skew(10deg, 120deg);
     transition: all .5s;
 }
-
