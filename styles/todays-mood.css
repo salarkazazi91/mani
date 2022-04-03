@@ -1,0 +1,61 @@
+section.main {
+    text-align: center;
+}
+
+section.main>* {
+    margin     : 2rem;
+    font-family: inherit;
+}
+
+h1 {
+    margin   : 4rem;
+    font-size: clamp(1.4rem, 5vw, 6rem)
+}
+
+.mood-images {
+    display              : grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1rem));
+    justify-content      : center;
+}
+
+.mood-img {
+    width : 100%;
+    height: auto;
+}
+
+
+.note-part {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    font-size      : clamp(1rem, 5vw, 5rem);
+}
+
+
+.note-part #note {
+    margin-left  : 1rem;
+    border-radius: 5px;
+    font-size    : clamp(1rem, 5vw, 3rem);
+    height       : 20vh;
+    outline: none;
+    border: none;
+    color: var(--clr-moods-today-note);
+}
+
+.save-btn {
+    padding      : 1rem 2.3rem;
+    border-radius: 11px;
+    outline      : none;
+    font-size    : inherit;
+    cursor       : pointer;
+    border       : none;
+    font-weight  : 900;
+    color        : var(--clr-todays-mood-save-btn);
+    transition       : background-color .5s, color .5s;
+}
+
+.save-btn:hover {
+    background-color: var(--bg-clr-hover-todays-mood-save-btn);
+    color           : var(--clr-hover-todays-mood-save-btn);
+    transition       : background-color .5s, color .5s;
+}

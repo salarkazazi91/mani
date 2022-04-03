@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today's mood</title>
+    <title>Today's Mood</title>
 
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/user-profile.css">
+    <link rel="stylesheet" href="./styles/todays-mood.css">
 
     <script src="./scripts/script.js"></script>
 </head>
-<body> 
-    <h1>Today's mood</h1>
+
+<body>
+    <div class="menu">
+        <input class="menu-chkbx" type="checkbox" name="menu-chkbx" id="menu-chkbx">
+        <ul class="menu-items">
+            <li><a href="./user-profile.html">User Profile</a></li>
+            <li><a href="./todays-mood.html">My Mood Today</a></li>
+        </ul>
+
+        <label class="menu-chkbx-label" for="menu-chkbx">
+            <div class="menu-btn">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </label>
+    </div>
+    <section class="main">
+        <h1>My today's mood is:</h1>
+        <div class="mood-images">
+            <img class="mood-img happy" src="./images/image1.png">
+            <img class="mood-img sad" src="./images/image2.png">
+            <img class="mood-img angry" src="./images/image3.png">
+            <img class="mood-img stressed" src="./images/image4.png">
+        </div>
+        <div class="note-part">
+            <textarea name="note" id="note"  placeholder="How's your mood today?"></textarea>
+        </div>
+        <button class="save-btn">Save</button>
+    </section>
 </body>
+
 </html>

@@ -4,15 +4,20 @@
     /* RAW COLORS */
     --clr-azure: #1e26ff;
     --clr-white: #ffffff;
-
+    --clr-turquoise: #03f4f0;
+    --clr-tomato: rgb(197, 83, 83);
 
 
     /* Layout */
-    --clr-primary-main   : var(--clr-azure);
-    --clr-primary-font   : var(--clr-white);
-    --bg-clr-menu-line   : rgb(197, 83, 83) ;
-    --bg-clr-menu-items  : var(--clr-white);
-    --clr-menu-items-font: var(--clr-azure);
+    --clr-primary-main        : var(--clr-azure);
+    --clr-primary-font        : var(--clr-white);
+    --bg-clr-menu-line        : var(--clr-tomato);
+    --bg-clr-menu-items       : var(--clr-white);
+    --clr-menu-items-font     : var(--clr-azure);
+    --clr-todays-mood-save-btn: var(--clr-tomato);
+    --bg-clr-hover-todays-mood-save-btn: var(--clr-tomato);
+    --clr-hover-todays-mood-save-btn: var(--clr-white);
+    --clr-moods-today-note: var(--clr-turquoise);
 }
 
 /* _____________________________________________END COLORS_____________________________________________ */
