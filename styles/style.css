@@ -38,8 +38,8 @@ li {
     list-style: none;
 }
 
-img{
-    width: 100%;
+img {
+    width : 100%;
     height: auto;
 }
 
@@ -47,11 +47,13 @@ img{
     z-index: 100;
 }
 
-.menu .logo{
-    background: url(../images/logo.png) center;
+.menu .logo {
+    background     : url(../images/logo.png) center;
     width          : 70px;
     height         : 70px;
     background-size: cover;
+    position: relative;
+    z-index: 20000;
 }
 
 .menu .menu-items {
@@ -60,17 +62,14 @@ img{
     left            : 0%;
     right           : 0%;
     transition      : all .5s;
-    padding         : 1em 0;
+    padding         : 1rem 0;
     background-color: var(--bg-clr-menu-items);
     cursor          : pointer;
 }
 
 .menu .menu-chkbx:checked~.menu-items {
-    top            : 0%;
-    transition     : all .5s;
-    flex-flow      : column nowrap;
-    justify-content: space-around;
-    align-items    : center;
+    top       : 0%;
+    transition: all .5s;
 }
 
 
@@ -88,7 +87,7 @@ img{
 
 .menu .menu-items a {
     color    : var(--clr-menu-items-font);
-    font-size: clamp(1rem, 4vw, 3rem);
+    font-size: clamp(1rem, 3vw, 1.25rem);
 }
 
 .menu .menu-items a:hover {
@@ -133,10 +132,21 @@ img{
     transition: all .5s;
 }
 
-footer{
-    width: 100vw;
-    height: 10vh;
+footer {
+    width     : 100vw;
+    height    : 10vh;
     text-align: center;
-    margin: 1rem auto 0;
+    margin    : 1rem auto 0;
     border-top: 1px solid var(--clr-footer-border);
+}
+
+@media screen and (min-width:1024px) {
+    .menu .menu-items {
+        padding-left: 60px;
+        display: flex;
+        top: 0;
+    } 
+    .menu .menu-btn {
+        display: none;
+    }
 }
