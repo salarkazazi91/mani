@@ -40,6 +40,7 @@ h1 {
     outline: none;
     border: none;
     color: var(--clr-moods-today-note);
+    padding:.5rem 1rem;
 }
 
 .save-btn {

@@ -42,6 +42,13 @@ li {
     z-index: 100;
 }
 
+.menu .logo{
+    background: url(../images/logo.png) center;
+    width          : 70px;
+    height         : 70px;
+    background-size: cover;
+}
+
 .menu .menu-items {
     position        : fixed;
     top             : -100%;
@@ -86,8 +93,6 @@ li {
 .menu .menu-btn {
     width          : 60px;
     height         : 60px;
-    max-width: 15vw;
-    max-height: 15vw;
     border         : 1px solid var(--bg-clr-menu-line);
     border-radius  : 50px;
     cursor         : pointer;
