@@ -1,0 +1,18 @@
+/* _____________________________________________COLORS_____________________________________________ */
+:root {
+
+    /* RAW COLORS */
+    --clr-azure: #1e26ff;
+    --clr-white: #ffffff;
+
+
+
+    /* Layout */
+    --clr-primary-main   : var(--clr-azure);
+    --clr-primary-font   : var(--clr-white);
+    --bg-clr-menu-line   : rgb(197, 83, 83) ;
+    --bg-clr-menu-items  : var(--clr-white);
+    --clr-menu-items-font: var(--clr-azure);
+}
+
+/* _____________________________________________END COLORS_____________________________________________ */

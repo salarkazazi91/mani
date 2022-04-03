@@ -1,0 +1,118 @@
+@import url(./variables.css);
+@import url(./fonts.css);
+
+* {
+    margin    : 0;
+    padding   : 0%;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-x: hidden;
+
+} 
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+body {
+    color           : var(--clr-primary-font);
+    background-color: var(--clr-primary-main);
+    font-family     : 'Source Code Pro', monospace;
+    font-size       : clamp(1rem, 2vw, 3rem);
+}
+
+a {
+    text-decoration: none;
+    color          : var(--clr-primary-font);
+}
+
+li {
+    list-style: none;
+}
+
+.menu {
+    z-index: 100;
+}
+
+.menu .menu-items {
+    position        : fixed;
+    top             : -100%;
+    left            : 0%;
+    right           : 0%;
+    transition      : all .5s;
+    padding         : 1em 0;
+    background-color: var(--bg-clr-menu-items);
+    cursor          : pointer;
+}
+
+.menu .menu-chkbx:checked~.menu-items {
+    top            : 0%;
+    transition     : all .5s;
+    flex-flow      : column nowrap;
+    justify-content: space-around;
+    align-items    : center;
+}
+
+
+.menu .menu-items li {
+    width     : 100%;
+    text-align: center;
+    transition: background-color .5s;
+}
+
+.menu .menu-items li:hover {
+    background-color: salmon;
+    transition      : background-color .5s;
+    border-radius   : 2px;
+}
+
+.menu .menu-items a {
+    color    : var(--clr-menu-items-font);
+    font-size: clamp(1rem, 4vw, 3rem);
+}
+
+.menu .menu-items a:hover {
+    color: white;
+}
+
+.menu .menu-btn {
+    width          : 60px;
+    height         : 60px;
+    border         : 1px solid var(--bg-clr-menu-line);
+    border-radius  : 50px;
+    cursor         : pointer;
+    margin-left    : auto;
+    position       : fixed;
+    left           : 0;
+    right          : 1%;
+    top            : 1%;
+    z-index        : 1000;
+    transition     : all .5s;
+    display        : flex;
+    flex-flow      : column nowrap;
+    justify-content: center;
+}
+
+
+.menu .menu-chkbx {
+    display : none;
+    position: absolute;
+}
+
+
+.menu .menu-btn .line {
+    width           : 80%;
+    height          : 5px;
+    background-color: var(--bg-clr-menu-line);
+    margin          : 6px auto;
+    transition      : all .1s;
+}
+
+.menu .menu-chkbx:checked~.menu-chkbx-label .menu-btn .line {
+    transform : skew(10deg, 120deg);
+    transition: all .5s;
+}
+
